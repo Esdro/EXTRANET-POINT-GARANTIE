@@ -1,0 +1,221 @@
+main section.reparateur-starting  {
+    gap: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -100%;
+    transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+  }
+  main section.reparateur-starting.visible {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0;
+      transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+      transition-timing-function: ease-in-out;
+  }
+
+main section.reparateur-starting aside {
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/arlington-research-nFLmPAf9dVc-unsplash.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+main aside .box-content button {
+    align-self: flex-start;
+    padding: .7rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(---box-shadow);
+    height: 40px;
+
+}
+
+main aside .box-content {
+    padding: 0 5%;
+}
+
+main section.reparateur-starting aside h2 {
+    font-size: 2.8rem;
+}
+
+main aside .box-content .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+main aside .box-content .row button {
+    flex: 1;
+    width: 100%;
+    align-self: flex-start;
+    /* font-size: 1rem; */
+}
+
+main aside .box-content .row .input-container {
+    flex: 3;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+
+}
+
+.input-container .input {
+    width: 60%;
+    /* background-color: white; */
+    height: inherit;
+    padding: 0;
+    position: relative;
+
+}
+
+.input-container .input input {
+    width: 100%;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    outline: none;
+    height: inherit;
+    padding: 0 45px 0 25px;
+    font-style: oblique;
+    font-size: .9rem;
+    letter-spacing: .2rem;
+
+
+}
+
+.input-container .input  i {
+    position: absolute;
+    top: 0%;
+    font-size: 1.3rem;
+    right: 0%;
+    /* background-color: #ccc; */
+    width: 45px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main{
+    box-sizing: border-box !important;
+}
+
+section.search-results {
+    background-color: #f4f4f4;
+    margin: -8.5% !important;
+    box-sizing: border-box;
+  padding: 7rem 3rem;
+}
+
+section.search-results .section-header {
+    margin: 3rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+section.search-results .section-header .title h2 {
+    font-size: 2.6rem;
+}
+
+
+.results-body .magasins {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.magasins .card.magasin {
+    flex: 1;
+    width: 45%;
+    max-width: 350px;
+    background-color: white;
+    box-shadow: var(---box-shadow);
+    margin:  0 .3rem ;
+}
+.card.magasin > *  {
+    width: 100%;
+}
+.card.magasin .card-poster {
+    width: 100%;
+}
+
+.card.magasin .card-poster img {
+    width: 100%;
+    clip-path: circle(55.7% at 50% 2%);
+}
+.card.magasin .card-title {
+    margin: -2rem 0 0;
+    width: 100%;
+    padding: .7rem;
+    text-transform: uppercase;
+    /* stroke: 1px white;
+    -webkit-text-stroke: 1px white; */
+    font-weight: bold;
+}
+.card.magasin .card-meta {
+    margin: -1rem 0 0;
+    width: 100%;
+    padding: .5rem .7rem 0;
+}
+.card.magasin .card-body, .card.magasin .card-footer {
+    width: 100%;
+    padding: .5rem  .7rem 0;
+}
+
+.card.magasin .card-body .magasin-link {
+    width: 100%;
+    padding: 1rem 0;
+}
+.card.magasin .card-body .magasin-link a {
+   background-color: var(--accent-color);
+   padding: .5rem;
+   border-radius: 5px;
+   line-height: 1.3;
+}
+.card.magasin .card-body [class^="magasin-"]:not(:last-child), .card-footer  {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin: .5rem 0;
+  align-items: center;
+}
+.card-footer {
+    margin-top: -1rem !important;
+}
+.card-footer i{
+    font-size: 1.9rem;
+    color: var(--accent-color);
+}
+.card-header i {
+    color: var(--accent-color);
+}
+.card-body i {
+    font-size: 1.1rem;
+}
+.results-body  {
+    position: relative;
+}
+.results-body  span[class$="nav"] {
+    position: absolute;
+    top: 50%;
+    font-size: 2.1rem;
+    width: 50px;
+    display: inline-block;
+}
+.results-body  span.previous-nav {
+    left: -1.9rem;
+    text-align: left;
+}
+.results-body  span.next-nav {
+    text-align: right;
+    right: -1.9rem;
+}

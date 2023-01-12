@@ -1,0 +1,479 @@
+main section.reparateur-starting  {
+    gap: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -100%;
+    transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+  }
+  main section.reparateur-starting.visible {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0;
+      transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+      transition-timing-function: ease-in-out;
+  }
+
+main section.reparateur-starting aside {
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/arlington-research-nFLmPAf9dVc-unsplash.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+section.reparateur-starting .box-content {
+    padding: 0 5%  0 15%;
+    overflow: hidden;
+}
+section.reparateur-starting .box-content  h2.heading {
+    font-size: 2.5rem;
+    color: black;
+}
+.right-box .fake-opacity {
+    background-color: white;
+    opacity: .77;
+}
+section.reparateur-starting .box-content  button {
+    width: 107%;
+    background-color: var(--like-blue) !important;
+    color: white !important;
+}
+
+
+
+
+section.choix-appareil {
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+section.choix-appareil  aside.mega-content  {
+    /* background-color: #d9d9d9; */
+    border-radius: 10px;
+}
+section.choix-appareil aside.left-heading{
+    font-size: .9rem;
+    padding:  .4rem .5rem;
+    display: none;
+}
+section.choix-appareil aside.left-heading.listed{
+    display: block;
+}
+section.choix-appareil aside.left-heading .heading h2 {
+    font-size: 1.7rem;
+} 
+
+section.choix-appareil aside.left-heading .heading {
+    margin: .7rem .4rem;
+}
+.infos {
+    background-color: #D4E0F1;
+    padding: .3rem;
+    border-radius: 7px;
+}
+.infos .head {
+    margin: .4rem;
+    display: flex;
+    gap: .7rem;
+    justify-content: center;
+    align-items: center;
+}
+.infos .head i {
+    font-size: 1.5rem;
+}
+
+.suggest-imei {
+    margin: .7rem .2rem;
+    text-align: center;
+}
+
+
+aside.mega-content {
+    padding: .5rem;
+    align-self: flex-start;
+}
+aside.mega-content .categories {
+    display: flex;
+    gap: .4rem;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    /* margin: 0; */
+    padding: .2rem;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+}
+.categories li {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+
+}
+
+.categories li.listed .heading  {
+    flex-direction: column;
+    padding: .5rem 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.categories li.listed .heading  .img-wrapper {
+    height: 100%;
+    flex: 50%;
+}
+.categories li.listed .heading  h4 ,
+.categories li.listed .heading  i {
+    flex: 20%;
+}
+.categories li .heading  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: .2rem;
+}
+
+.categories li .heading .img-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories li .heading h4{
+    font-size: 1rem;
+}
+.categories li .heading .img-wrapper img{
+    width: auto;
+    max-width: 100px;
+    max-height: 50px;
+    height: 100%;
+    /* object-fit: fill; */
+    /* border-radius: 50%; */
+}
+
+.categories li.listed  {
+    height: 150px !important;
+    max-width: 150px;
+    padding: .5rem;
+    object-fit: contain;
+    background-color: #efefef;
+    border-radius: 50%;
+}
+.category-contents {
+    display: none;
+    position: relative;
+   right: -120%;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: .6rem;
+    background-color: #d9d9d9;
+    border-radius: 7px;
+    transition: all .75s ease-in-out;
+}
+.category-contents.displayed {
+    display: block;
+    right: 0%;
+    visibility: visible;
+    opacity: 1;
+}
+.category-contents > div {
+    display: none;
+}
+.category-contents[data-category="smartphone"] div[class^="smart"] {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+.category-contents[data-category="tablette"] div[class^="tablette"] {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+}
+.category-contents[data-category="ordinateur"] div[class^="ordinateur"] {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+}
+.category-contents[data-category="autre-objet"] div[class^="autre-objet"] {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+}
+.marques li {
+    list-style: none;
+    display: block;
+    padding: .4rem .2rem;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgb(0 0 0/16%);
+    box-sizing: border-box;
+    margin-top: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   border-top-left-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+}
+
+.marques li:first-of-type{
+    margin-top:  0 ;
+}
+.marques li.marque:hover {
+    background-color: #efefef;
+}
+
+
+
+.heading .img-wrapper  {
+    flex: 30%;
+}
+.heading h4 {
+    flex: 60%;
+}
+
+.heading h4 ~ i {
+    flex: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.smartphone-content  > .marques {
+    /* border: 1px solid red; */
+    flex: 30%;
+}
+.smartphone-content  > .global-wrapper {
+    /* border: 1px solid red; */
+    flex: 70%;
+}
+
+ul.marques > li.marque {
+    padding: .6rem;
+}
+
+ul.marques > li.marque.listed{
+    background-color: var(--accent-color);
+    position: relative;
+}
+.marques li i.fa-minus{
+   display: none;
+}
+
+ul.marques > li.marque.listed i.fa-minus{
+   display: block;
+}
+ul.marques > li.marque.listed i.fa-plus{
+   display: none;
+}
+ul.marques > li.marque.listed::after{
+    content: "";
+  display: inline-block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-right: 1.8rem solid transparent;
+  border-bottom: 1.8rem solid black;
+  top: 4.8px;
+  bottom: 0;
+  right: -1rem;
+  transform: rotate(-135deg);
+  position: absolute;
+}
+
+ul.catalog {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+ul.catalog > *  {
+    align-self: flex-start;
+    flex: 45%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    /* align-items: flex-start; */
+    /* border: 1px solid red; */
+}
+ul.catalog  li {
+    margin: .5rem 0;
+    box-shadow: 5px 5px 15px #ccc;
+    border-radius: .4rem;
+}
+ul.catalog  li> a:hover{
+    background-color: var(--accent-color);
+    border-radius: inherit;
+}
+ul.catalog  li:nth-child(even){
+    background-color: #ccc;
+}
+ul.catalog  li:nth-child(odd){
+    background-color: #efefef;
+}
+ul.catalog  li > a.link {
+    display: block;
+    padding: .5rem;
+    line-height: normal;
+    transition: background-color 650ms ease-in-out;
+}
+
+div.catalog-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(650px);
+    transform-origin: top right;
+    transition: transform 900ms ease-in-out;
+}
+div.catalog-wrapper.displayed {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: transform 900ms ease-in-out;
+}
+
+
+/*****
+
+Pour les smartphones
+
+******/
+
+
+div.catalog-wrapper[data-catalog-active="apple"] > ul.catalog.apple {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="samsung"] > ul.catalog.samsung {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="xiaomi"] > ul.catalog.xiaomi {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="oppo"] > ul.catalog.oppo {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="honor"] > ul.catalog.honor {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="huawei"] > ul.catalog.huawei {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="sony"] > ul.catalog.sony {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="wiko"] > ul.catalog.wiko {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="nokia"] > ul.catalog.nokia {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="asus"] > ul.catalog.asus {
+   display: flex; 
+}
+div.catalog-wrapper[data-catalog-active="autres-marques"] > ul.catalog.autres-marques {
+   display: flex; 
+}
+
+/*****
+
+Pour les tablettes
+
+******/
+.tablette-content > ul {
+   flex: 30%;
+}
+.tablette-content > div {
+   flex: 70%;
+}
+
+div.catalog-wrapper[data-catalog-active="ipad"] > ul.catalog.ipad {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="ipad-mini"] > ul.catalog.ipad-mini {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="ipad-pro"] > ul.catalog.ipad-pro {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="ipad-air"] > ul.catalog.ipad-air {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="galaxy-tab-a"] > ul.catalog.galaxy-tab-a {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="galaxy-tab-s"] > ul.catalog.galaxy-tab-s {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="galaxy-tab"] > ul.catalog.galaxy-tab {
+    display: block; 
+ }
+div.catalog-wrapper[data-catalog-active="autres-tab"] > ul.catalog.autres-tab {
+    display: block; 
+ }
+
+/*****
+
+Pour les ordi
+
+******/
+.ordinateur-content > ul {
+    flex: 30%;
+ }
+ .ordinateur-content > div {
+    flex: 70%;
+ }
+ div.catalog-wrapper[data-catalog-active="macbook-air"] > ul.catalog.macbook-air {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="macbook-pro"] > ul.catalog.macbook-pro {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="pc-windows"] > ul.catalog.pc-windows {
+    display: flex; 
+ }
+
+
+/*****
+
+Pour les objets nomades
+
+******/
+.autre-objet-content > ul {
+    flex: 30%;
+ }
+ .autre-objet-content > div {
+    flex: 70%;
+ }
+ div.catalog-wrapper[data-catalog-active="console"] > ul.catalog.console {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="accessoires"] > ul.catalog.accessoires {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="montres"] > ul.catalog.montres {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="photos"] > ul.catalog.photos {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="trotinette"] > ul.catalog.trotinette {
+    display: flex; 
+ }
+div.catalog-wrapper[data-catalog-active="autres-objets"] > ul.catalog.autres-objets {
+    display: flex; 
+ }
+
+

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}  {{ parent() }} {% endblock %}
+
+{% block body %}
+
+<main class="main-content">
+        
+        <section class="as-heroe flex-h  ">
+            <aside class="left-box flex-1">
+                <div class="fake-opacity"></div>
+                <div class="box-content">
+                    <h2 class="heading">
+                        Connaitre le prix de votre réparation en <span class="bold">quelques clics</span>
+                    </h2>
+                    <button type="button" class="btn js-action-devis" data-section-cible="devis-starting"><a href="/devis">Devis immédiat</a></button>
+                </div>
+            </aside>
+            <aside class="right-box flex-1">
+                <div class="fake-opacity"></div>
+               <div class="box-content">
+                <h2 class="heading">
+                    Trouver le <span class="bold">réparateur agréé</span> le plus proche 
+                </h2>
+                <button type="button" class="btn js-action-reparateur" data-section-cible="reparateur-starting"><a href="/reparation">Localiser mon réparateur</a></button>
+               </div>
+            </aside>
+        </section>
+    </main>
+    
+{% endblock %}

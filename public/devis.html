@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" /> -->
+        <meta name="description" content=" Néo - Garantie">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="/globales.css">
+        <link rel="stylesheet" href="./devis.css">
+        <link rel="stylesheet" href="/_responsive.css">
+        <title> Néo - Extranet</title>
+    </head>
+    <body>
+        <a href="https://garantie.market" class="logo-clickable">
+            <img src="https://cdn.shopify.com/s/files/1/0459/5879/1320/files/logo_96cf7697-d2f0-40a0-92e9-6005be304fea.png?v=1668195212" alt="Logo de notre site ">
+        </a>
+        <div class="logo-container"></div>
+        <main class="main-content">
+            <section class="reparateur-starting flex-v ">
+                <aside class="right-box ">
+                    <div class="fake-opacity"></div>
+                    <div class="box-content">
+                        <h2 class="heading">
+                            Connaitre le prix de votre réparation en
+                            <span class="bold">quelques clics</span>
+                        </h2>
+                        <button type="button" class="btn js-action-devis" data-section-cible="devis-starting">
+                            <a href="/devis.html">Devis immédiat</a>
+                        </button>
+                    </div>
+                </aside>
+            </section>
+            <section class="choix-appareil flex-h">
+                <aside class="left-heading listed flex-1">
+                    <div class="heading">
+                        <h2 class="title">
+                            Quel est
+                            <span class="stroked">votre appareil</span>
+                            ?
+                            <span class="stroked">?</span>
+                        </h2>
+                    </div>
+                    <div class="infos">
+                        <div class="head">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span class="bold">Comment trouver mon modèle ?</span>
+                        </div>
+                        <ul class="list">
+                            <li class="item">Android : Réglages > À propos du téléphone > Identité du téléphone.</li>
+                            <li class="item">Apple : Réglages > Général > Informations</li>
+                        </ul>
+                        <div class="suggest-imei">
+                            Avec l'imei de l'appareil :
+                            <span class="bold">www.imei.info</span>
+                        </div>
+                        <div class="suggest-infos">
+                            <span class="bold"> En cas de doute, rendez-vous chez un réparateur agréé Point Garantie</span>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="mega-content flex-4">
+                    <ul class="categories">
+                        <li class="smartphone " data-appareil-choisi="smartphone">
+                            <div class="heading">
+                                <div class="img-wrapper">
+                                    <img src="../images/smartphone.png" alt="hhhhh">
+                                </div>
+                                <h4> Smartphone</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </li>
+                        <li class="tablette" data-appareil-choisi="tablette">
+                            <div class="heading">
+                                <div class="img-wrapper">
+                                    <img src="../images/tablette.png" alt="hhhhh">
+                                </div>
+                                <h4> Tablette</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </li>
+                        <li class="ordinateur" data-appareil-choisi="ordinateur">
+                            <div class="heading">
+                                <div class="img-wrapper">
+                                    <img src="../images/mac.png" alt="hhhhh">
+                                </div>
+                                <h4> Ordinateur</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </li>
+                        <li class="autre-objet" data-appareil-choisi="autre-objet">
+                            <div class="heading">
+                                <div class="img-wrapper">
+                                    <img src="../images/trotinette.jpg" alt="hhhhh">
+                                </div>
+                                <h4> Objet Nomade</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="category-contents" data-category="tablette">
+                        <div class="smartphone-content">
+                            <ul class="marques">
+                                <li class="marque" data-marque="apple">Apple
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="samsung">Samsung
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="xiaomi">Xiaomi
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="oppo">Oppo
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="huawei">Huawei
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="honor">Honor
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="sony">Sony
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="wiko">Wiko
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="nokia">Nokia
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="asus">Asus
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="autres-marques">Autres
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                            </ul>
+                            <div class="global-wrapper">
+                                <div class="catalog-wrapper" data-catalog-active="apple">
+                                    <ul class="apple catalog">
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-6" class="link">iPhone 6</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-6-plus" class="link"> iPhone 6 Plus</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-6s" class="link"> iPhone 6s</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-6s-plus" class="link"> iPhone 6s Plus</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-7" class="link"> iPhone 7</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-7-plus" class="link"> iPhone 7 Plus</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-8" class="link">iPhone 8</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-8-plus" class="link"> iPhone 8 Plus</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-x" class="link"> iPhone X</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-xr" class="link"> iPhone XR</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-xs" class="link">iPhone XS</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-xs-max" class="link"> iPhone XS Max</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-11" class="link">iPhone 11</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-11-pro" class="link"> iPhone 11 Pro</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-11-pro-max" class="link"> iPhone 11 Pro Max</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-12" class="link"> iPhone 12</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-12-mini" class="link">iPhone 12 mini</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-12-pro" class="link"> iPhone 12 Pro</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-12-pro-max" class="link">  iPhone 12 Pro Max</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-13" class="link">  iPhone 13</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-13-mini" class="link">  iPhone 13 mini</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-13-pro" class="link">  iPhone 13 Pro</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-13-pro-max" class="link">iPhone 13 Pro Max</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-14" class="link">  iPhone 14</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-14-plus" class="link">  iPhone 14 Plus</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-14-pro" class="link">  iPhone 14 Pro</a>
+                                        </li>
+                                        <li class="iphone">
+                                            <a href="devis/smartphone/apple/iphone-14-pro-max" class="link">iPhone 14 Pro Max</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="samsung catalog">
+                                        <div class="galaxy series-s">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s6" class="link">Galaxy S6</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s6-edge" class="link">Galaxy S6 Edge</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s7" class="link">Galaxy S7</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s7-edge" class="link">Galaxy S7 Edge</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s8" class="link">Galaxy S8</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s8+" class="link">Galaxy S8+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s9" class="link">Galaxy S9</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s9+" class="link">Galaxy S9+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s10" class="link">Galaxy S10</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s10-lite" class="link">Galaxy S10 Lite</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s10+" class="link">Galaxy S10+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s10-5g" class="link">Galaxy S10 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s20" class="link">Galaxy S20</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s20-fe" class="link">Galaxy S20 FE</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s20-fe-5g" class="link">Galaxy S20 FE 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s20+" class="link">Galaxy S20+ 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s20-ultra-5g" class="link">Galaxy S20 Ultra 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s21" class="link">Galaxy S21</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s21-fe-5G" class="link">Galaxy S21 FE 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s21+" class="link">Galaxy S21+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s21-ultra" class="link">Galaxy S21 Ultra</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s22" class="link">Galaxy S22</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s22+" class="link">Galaxy S22+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-s22-ultra" class="link">Galaxy S22 Ultra</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-a">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a53-5g" class="link">Galaxy A53 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a33-5g" class="link">Galaxy A33 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a23" class="link">Galaxy A23</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a23-5g" class="link">Galaxy A23 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a13" class="link">Galaxy A13</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a13-5g" class="link">Galaxy A13 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a03s" class="link">Galaxy A03s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a03" class="link">Galaxy A03</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a72" class="link">Galaxy A72</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a52" class="link">Galaxy A52</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a52s" class="link">Galaxy A52s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a52s-5g" class="link">Galaxy A52s 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a42-5g" class="link">Galaxy A42 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a32-5g" class="link">Galaxy A32 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a32" class="link">Galaxy A32</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a22-5g" class="link">Galaxy A22 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a12" class="link">Galaxy A12</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a02s" class="link">Galaxy A02s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a71" class="link">Galaxy A71</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a51-5g" class="link">Galaxy A51 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a51" class="link">Galaxy A51</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a41" class="link">Galaxy A41</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a31" class="link">Galaxy A31</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a21s" class="link">Galaxy A21s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a80" class="link">Galaxy A80</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a50" class="link">Galaxy A50</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a40" class="link">Galaxy A40</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a70" class="link">Galaxy A70</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a20s" class="link">Galaxy A20s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a30s" class="link">Galaxy A30s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a20" class="link">Galaxy A20</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a20E" class="link">Galaxy A20E</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a10s" class="link">Galaxy A10s</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a10" class="link">Galaxy A10</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a9-2018" class="link">Galaxy A9 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a8-2018" class="link">Galaxy A8 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a7-2018" class="link">Galaxy A7 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a6-2018" class="link">Galaxy A6 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a5-2017" class="link">Galaxy A5 (2017)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a3-2017" class="link">Galaxy A3 (2017)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a5-2016" class="link">Galaxy A5 (2016)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a3-2016" class="link">Galaxy A3 (2016)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a7" class="link">Galaxy A7</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a5" class="link">Galaxy A5</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-a3" class="link">Galaxy A3</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-fold-et-flip">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-fold" class="link">Galaxy Fold</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-fold-5g" class="link">Galaxy Fold 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-fold-2" class="link">Galaxy Z Fold2</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-fold-3" class="link">Galaxy Z Fold3</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-fold-4" class="link">Galaxy Z Fold4</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-flip" class="link">Galaxy Z Flip</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-flip-3-5g" class="link">Galaxy Z Flip3 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-z-flip-4-5g" class="link">Galaxy Z Flip4 5g</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-notes">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-8" class="link">Galaxy Note 8</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-9" class="link">Galaxy Note 9</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-10-lite" class="link">Galaxy Note 10 Lite</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-10" class="link">Galaxy Note 10</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-10+" class="link">Galaxy Note 10+</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-20" class="link">Galaxy Note 20</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-20-5g" class="link">Galaxy Note 20 5G</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-note-20-ultra-5g" class="link">Galaxy Note 20 Ultra 5G</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-m">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m53-5g" class="link">Galaxy M53 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m33-5g" class="link">Galaxy M33 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m23-5g" class="link">Galaxy M23 5g</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m32" class="link">Galaxy M32</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m12" class="link">Galaxy M12</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m51" class="link">Galaxy M51</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m31" class="link">Galaxy M31</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-m11" class="link">Galaxy M11</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-j">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j8" class="link">Galaxy J8</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j6-plus" class="link">Galaxy J6 Plus</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j4" class="link">Galaxy J4</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j5" class="link">Galaxy J5</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j4-plus" class="link">Galaxy J4 Plus</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j6-2018" class="link">Galaxy J6 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j5-2017" class="link">Galaxy J5 (2017)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j6-2018" class="link">Galaxy J6 (2018)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j7-2016" class="link">Galaxy J7 (2016)</a>
+                                            </li>
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-j3-2016" class="link">Galaxy J3 (2016)</a>
+                                            </li>
+                                        </div>
+                                        <div class="galaxy series-x-cover">
+                                            <li class="galaxy">
+                                                <a href="devis/smartphone/samsung/galaxy-x-cover-5" class="link">Galaxy XCover 5</a>
+                                            </li>
+                                            <li class="autre">
+                                                <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    <ul class="xiaomi catalog">
+                                        <div class="xiaomi series-redmi">
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-s2" class="link">Redmi S2</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-9t" class="link">Redmi Note 9T</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-9" class="link">Redmi Note 9</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-9s" class="link">Redmi Note 9S</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-9-pro" class="link">Redmi Note 9 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-8" class="link">Redmi Note 8</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-8t" class="link">Redmi Note 8</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-8-pro" class="link">Redmi Note 8</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-6-pro" class="link">Redmi Note 6 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-5" class="link">Redmi Note 5</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-5a" class="link">Redmi Note 5A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-5a-prime" class="link">Redmi Note 5A Prime</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-4" class="link">Redmi Note 4</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-4x" class="link">Redmi Note 4x</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-3" class="link">Redmi Note 3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-3-pro" class="link">Redmi Note 3 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-10" class="link">Redmi Note 10</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-10s" class="link">Redmi Note 10s</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-note-10-pro" class="link">Redmi Note 10 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-go" class="link">Redmi Go</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-9at" class="link">Redmi 9At</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-9a" class="link">Redmi 9A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-9c" class="link">Redmi 9C</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-9t" class="link">Redmi 9T</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-9" class="link">Redmi 9</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-8a" class="link">Redmi 8A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-8" class="link">Redmi 8</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-7a" class="link">Redmi 7A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-7" class="link">Redmi 7</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-6a" class="link">Redmi 6A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-6" class="link">Redmi 6</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-5a" class="link">Redmi 5A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-5-plus" class="link">Redmi 5 Plus</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-5" class="link">Redmi 5</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-4x" class="link">Redmi 4x</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-4a" class="link">Redmi 4A</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-4" class="link">Redmi4</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-3s" class="link">Redmi 3S</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/redmi-3" class="link">Redmi 3</a>
+                                            </li>
+                                        </div>
+                                        <div class="xiaomi series-mi">
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-play" class="link">Mi Play</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-note-2" class="link">Mi Note 2</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-note-3" class="link">Mi Note 3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-note-10-lite" class="link">Mi Note 10 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-note-10" class="link">Mi Note 10</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-note-10-pro" class="link">Mi Note 10 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-mix-3" class="link">Mi Mix 3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-mix-3-5g" class="link">Mi Mix 3 5G</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-mix-2" class="link">Mi Mix 2</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-mix-2s" class="link">Mi Mix 2S</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-mix" class="link">Mi Mix</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-max-3" class="link">Mi Max 3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-max-2" class="link">Mi Max 2</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-max" class="link">Mi Max</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-a1" class="link">Mi A1</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-a2" class="link">Mi A2</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-a2-lite" class="link">Mi A2 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-a3" class="link">Mi A3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-9" class="link">Mi 9</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-9-lite" class="link">Mi 9 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-9t" class="link">Mi 9T</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-9-se" class="link">Mi 9 SE</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-8" class="link">Mi 8</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-8-lite" class="link">Mi 8 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-8-pro" class="link">Mi 8 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-5" class="link">Mi 5</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-5s" class="link">Mi 5S</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-6" class="link">Mi 6</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11-lite" class="link">Mi 11 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11" class="link">Mi 11</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11i" class="link">Mi 11I</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11-ultra" class="link">Mi 11 Ultra</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11-lite-5g" class="link">Mi 11 Lite 5G</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10-lite" class="link">Mi 10 Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10" class="link">Mi 10</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10-pro" class="link">Mi 10 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10t" class="link">Mi 10T</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10t" class="link">Mi 10T</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10t-lite" class="link">Mi 10T Lite</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10t-pro" class="link">Mi 10T Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-10-lite-5g" class="link">Mi 10 Lite 5G</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/mi-11-lite-5g-ne" class="link"> 11 Lite 5G NE</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/11t-pro" class="link"> 11T Pro</a>
+                                            </li>
+                                            <li class="autre">
+                                                <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                            </li>
+                                        </div>
+                                        <div class="xiaomi series-poco">
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-f1" class="link">Poco F1</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-f2-pro" class="link">Poco F2 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-f3" class="link">Poco F3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-m3" class="link">Poco M3</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-m3-pro" class="link">Poco M3 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-x3-nfc" class="link">Poco X3 Nfc</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-x3-pro" class="link">Poco X3 Pro</a>
+                                            </li>
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/poco-f&" class="link">Poco F1</a>
+                                            </li>
+                                        </div>
+                                        <div class="xiaomi series-note">
+                                            <li class="xiaomi">
+                                                <a href="devis/smartphone/xiaomi/note-7" class="link">Note 7</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    <ul class="oppo catalog">
+                                        <div class="oppo series-find">
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x2-lite" class="link">Find X2 Lite</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x2-neo" class="link">Find X2 Néo</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x2-pro" class="link">Find X2 Pro</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x3-lite" class="link">Find X3 Lite</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x3-neo" class="link">Find X3 Néo</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/find-x3-pro" class="link">Find X3 Pro</a>
+                                            </li>
+                                        </div>
+                                        <div class="oppo series-reno">
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno" class="link">Reno</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno-2" class="link">Reno 2</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno-4-5g" class="link">Reno 4 5g</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno-4-pro" class="link">Reno 4 Pro</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno-4-pro-5g" class="link">Reno 4 Pro 5G</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/reno-6-5g" class="link">Reno 6 5G</a>
+                                            </li>
+                                        </div>
+                                        <div class="oppo series-a">
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a94" class="link">A94</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a54-5g" class="link">A54 5G</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a9-2020" class="link">A9 (2020)</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a53s" class="link">A53s</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a74-5g" class="link">A74 5G</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a72" class="link">A72</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a16s" class="link">A16s</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a15s" class="link">A15s</a>
+                                            </li>
+                                            <li class="oppo">
+                                                <a href="devis/smartphone/oppo/a15" class="link">A15</a>
+                                            </li>
+                                            <li class="autre">
+                                                <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    <ul class="huawei catalog">
+                                        <div class="huawei series-p">
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p40-pro" class="link">Huawei P40 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p40" class="link">Huawei P40</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p40-lite" class="link">Huawei P40 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p40-lite-e" class="link">Huawei P40 Lite E</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p40-lite-5g" class="link">Huawei P40 Lite 5G</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p30-pro" class="link">Huawei P30 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p30" class="link">Huawei P30</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p30-lite" class="link">Huawei P30 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p20-pro" class="link">Huawei P20 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p20" class="link">Huawei P20</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p20-lite" class="link">Huawei P20 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p10-plus" class="link">Huawei P10 Plus</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p10" class="link">Huawei P10</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p10-lite" class="link">Huawei P10 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p9-plus" class="link">Huawei P9 Plus</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p9" class="link">Huawei P9</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p9-lite" class="link">Huawei P9 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p8" class="link">Huawei P8</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p8-lite" class="link">Huawei P8 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p8-lite-2017" class="link">Huawei P8 Lite (2017)</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart-2021" class="link">Huawei P Smart (2021)</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart-2020" class="link">Huawei P Smart (2020)</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart-2019" class="link">Huawei P Smart (2019)</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart+" class="link">Huawei P Smart +</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart+-2019" class="link">Huawei P Smart + (2019)</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart-z" class="link">Huawei P Smart Z</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart-s" class="link">Huawei P Smart S</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/p-smart" class="link">Huawei P Smart</a>
+                                            </li>
+                                        </div>
+                                        <div class="huawei series-y">
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6s" class="link">Huawei Y6S</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6p" class="link">Huawei Y6P</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6" class="link">Huawei Y6</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y625" class="link">Huawei Y625</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-li-compact" class="link">Huawei Y6  li compact</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-li" class="link">Huawei Y6  li</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-2019" class="link">Huawei Y6 2019</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-2018" class="link">Huawei Y6 2018</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-pro" class="link">Huawei Y6 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-2017" class="link">Huawei Y6 2017</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y6-pro-2017" class="link">Huawei Y6 Pro 2017</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y-5p" class="link">Huawei Y5P</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y5-2019" class="link">Huawei Y5 2019</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y5-2018" class="link">Huawei Y5 2018</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y7" class="link">Huawei Y7</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y7-prime" class="link">Huawei Y7 Prime</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y7-prime-2019" class="link">Huawei Y7 Prime 2019</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/y7-prime-2018" class="link">Huawei Y7 Prime 2018</a>
+                                            </li>
+                                            <li class="autre">
+                                                <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                            </li>
+                                        </div>
+                                        <div class="huawei series-mate">
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-40-pro" class="link">Huawei Mate 40 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-30-pro" class="link">Huawei Mate 30 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-20-pro" class="link">Huawei Mate 20 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-20-x" class="link">Huawei Mate 20 X</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-20-lite" class="link">Huawei Mate 20 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-10-pro" class="link">Huawei Mate 10 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-10-lite" class="link">Huawei Mate 10 Lite</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-9-pro" class="link">Huawei Mate 9 Pro</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-9" class="link">Huawei Mate 9</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-8" class="link">Huawei Mate 8</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/mate-s" class="link">Huawei Mate S</a>
+                                            </li>
+                                        </div>
+                                        <div class="huawei series-nova">
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/nova" class="link">Huawei Nova</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/nova-plus" class="link">Huawei Nova Plus</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/nova-2" class="link">Huawei Nova 2</a>
+                                            </li>
+                                        </div>
+                                        <div class="huawei series-nexus-gplay-ascend">
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/nexus-6p" class="link">Huawei Nexus 6P</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/ascend-y530" class="link">Huawei  Ascend Y530</a>
+                                            </li>
+                                            <li class="huawei">
+                                                <a href="devis/smartphone/huawei/g-play-mini" class="link">Huawei G Play Mini</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    <ul class="honor catalog">
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/view-20" class="link">  View 20</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/v10" class="link">  V10</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/play" class="link">  Play</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/9" class="link">  9</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/9-lite" class="link">  9 Lite</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/9x" class="link">  9X</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/9x-lite" class="link">  9X Lite</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/8" class="link">  8</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/8-lite" class="link">  8 Lite</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/8x" class="link">  8X</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/8-pro" class="link">  8 Pro</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/8a" class="link">  8A</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/10" class="link">  10</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/10-lite" class="link">  10 Lite</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/20-pro" class="link">  20 Pro</a>
+                                        </li>
+                                        <li class="honor">
+                                            <a href="devis/smartphone/honor/20-lite" class="link">  20 Lite</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="sony catalog">
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-1-li" class="link"> Xperia 1 li</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-5-li" class="link"> Xperia 5 li</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-5" class="link"> Xperia 5</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-10-plus" class="link"> Xperia 10 Plus</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xz3" class="link"> Xperia XZ3</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xz2-compact" class="link"> Xperia XZ2 Compact</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xz1" class="link"> Xperia XZ1</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xa1" class="link"> Xperia XA1</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-c5-ultra" class="link"> Xperia C5 Ultra</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-e3" class="link"> Xperia E3</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-m2" class="link"> Xperia M2</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-m4-aqua" class="link"> Xperia M4 Aqua</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-m5" class="link"> Xperia M5</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-t3" class="link"> Xperia T3</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-x" class="link"> Xperia X</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xa" class="link">Xperia XA</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xa-ultra" class="link">Xperia XA Ultra</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-xz" class="link">Xperia XZ</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z" class="link">Xperia Z</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z1" class="link">Xperia Z1</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z1-compact" class="link">Xperia Z1 Compact</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z2" class="link">Xperia Z2</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z3" class="link">Xperia Z3</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z3-compact" class="link">Xperia Z3 Compact</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z5" class="link">Xperia Z5</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z5-compact" class="link">Xperia Z5 Compact</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z5-dual" class="link">Xperia Z5 Dual</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z5-compact" class="link">Xperia Z5 Premium</a>
+                                        </li>
+                                        <li class="sony">
+                                            <a href="devis/smartphone/sony/xperia-z5-compact" class="link">Xperia Z5 Compact</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="wiko catalog">
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/barry" class="link">Barry</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/birdy" class="link">Birdy</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/bloom" class="link">Bloom</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/cink-peax-2" class="link">Cink Peax 2</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/darknight" class="link">Darknight</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/darkside" class="link">Darkside</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/getaway" class="link">Getaway</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/harry-2" class="link">Harry 2</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/lenny" class="link">Lenny</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/lenny-5" class="link">Lenny 5</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/rainbow-4g" class="link">Rainbow 4g</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/stairway" class="link">Stairway</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/sunset" class="link">Sunset</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/tommy-3" class="link">Tommy 3</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-2" class="link">View 2</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-2-go" class="link">View 2 GO</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-2-plus" class="link">View 2 Plus</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-4" class="link">View 4</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-4-lite" class="link">View 4 Lite</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-5" class="link">View 5</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-5-plus" class="link">View 5 Plus</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-max" class="link">View Max</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-3" class="link">View 3</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-3-lite" class="link">View 3 Lite</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/view-3-pro" class="link">View 3 Pro</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/wax" class="link"> Wax</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/wim-lite" class="link"> Wim Lite</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/y61" class="link"> Y 61</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/y60" class="link">Y 60</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/y51" class="link"> Y 51</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/y80" class="link"> Y 80</a>
+                                        </li>
+                                        <li class="wiko">
+                                            <a href="devis/smartphone/wiko/y81" class="link"> Y 81</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nokia catalog">
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/7.1" class="link">7.1</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/3" class="link">3</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/9-pureview" class="link">9 Pureview</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-1020" class="link">Lumia 1020</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-1520" class="link">Lumia 1520</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-530" class="link">Lumia 530</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-535" class="link">Lumia 535</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-610" class="link">Lumia 610</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-620" class="link">Lumia 620</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-625" class="link">Lumia 625</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-630" class="link">Lumia 630</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-635" class="link">Lumia 635</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-720" class="link">Lumia 720</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-735" class="link">Lumia 735</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-925" class="link">Lumia 925</a>
+                                        </li>
+                                        <li class="nokia">
+                                            <a href="devis/smartphone/nokia/lumia-930" class="link">Lumia 930</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="asus catalog">
+                                        <li class="asus">
+                                            <a href="devis/smartphone/asus/zenfone-max-m2" class="link"> Zenfone Max (M2)</a>
+                                        </li>
+                                        <li class="asus">
+                                            <a href="devis/smartphone/asus/zenfone-max-pro-m2" class="link"> Zenfone Max Pro (M2)</a>
+                                        </li>
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autre</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="autres-marques catalog">
+                                        <li class="autre">
+                                            <a href="devis/smartphone/autre-appareil" class="link"> Autres marques</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tablette-content">
+                            <ul class="marques">
+                                <li class="marque" data-marque="ipad">iPad
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="ipad-air">iPad Air
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="ipad-mini">iPad Mini
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="ipad-pro">iPad Pro
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="galaxy-tab-a">Galaxy Tab A
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="galaxy-tab-s">Galaxy Tab S
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="galaxy-tab">Galaxy Tab
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="autres-tab">Autres
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                            </ul>
+                            <div class="global-wrapper">
+                                <div class="catalog-wrapper" data-catalog-active="ipad">
+                                    <ul class="ipad catalog">
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-5" class="link"> iPad (5ème Génération) </a></li>
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-6" class="link"> iPad (6ème Génération) </a></li>
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-7" class="link"> iPad (7ème Génération) </a></li>
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-8" class="link"> iPad (8ème Génération) </a></li>
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-9" class="link"> iPad (9ème Génération) </a></li>
+                                            <li class="ipad"><a href="devis/tablette/ipad/generation-10" class="link"> iPad (10ème Génération) </a></li>
+                                            <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="ipad-mini catalog">
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-1" class="link"> iPad Mini (1ème Génération) </a></li>
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-2" class="link"> iPad Mini (2ème Génération) </a></li>
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-3" class="link"> iPad Mini(3ème Génération) </a></li>
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-4" class="link"> iPad Mini(4ème Génération) </a></li>
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-5" class="link"> iPad Mini(5ème Génération) </a></li>
+                                        <li class="ipad-mini"><a href="devis/tablette/ipad-mini/generation-6" class="link"> iPad Mini(6ème Génération) </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="ipad-air catalog">
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-1" class="link"> iPad Air (1ème Génération) </a></li>
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-2" class="link"> iPad Air (2ème Génération) </a></li>
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-3" class="link"> iPad Air (3ème Génération) </a></li>
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-4" class="link"> iPad Air (4ème Génération) </a></li>
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-5" class="link"> iPad Air (5ème Génération) </a></li>
+                                        <li class="ipad-air"><a href="devis/tablette/ipad-air/generation-6" class="link"> iPad Air (6ème Génération) </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="ipad-pro catalog">
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-11-pouces/generation-1" class="link"> iPad Pro 11 Pouces (1ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-11-pouces/generation-2" class="link"> iPad Pro 11 Pouces (2ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-11-pouces/generation-3" class="link"> iPad Pro 11 Pouces (3ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-11-pouces/generation-4" class="link"> iPad Pro 11 Pouces (4ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-1" class="link"> iPad Pro 12,9 Pouces (1ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-2" class="link"> iPad Pro 12,9 Pouces (2ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-3" class="link"> iPad Pro 12,9 Pouces (3ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-4" class="link"> iPad Pro 12,9 Pouces (4ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-5" class="link"> iPad Pro 12,9 Pouces (5ème Génération) </a></li>
+                                        <li class="ipad-pro"><a href="devis/tablette/ipad-pro-12-pouces/generation-6" class="link"> iPad Pro 12,9 Pouces (6ème Génération) </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="galaxy-tab-a catalog">
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/4" class="link">Galaxy Tab A4 </a></li> 
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/5" class="link">Galaxy Tab A5 </a></li>
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/6" class="link">Galaxy Tab A6 </a></li>
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/6-lite" class="link">Galaxy Tab A6 Lite </a></li>
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/7" class="link">Galaxy Tab A7 </a></li>
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/7-lite" class="link">Galaxy Tab A7 Lite </a></li>
+                                        <li class="galaxy-tab-a"><a href="devis/tablette/galaxy-tab-a/8" class="link">Galaxy Tab A8 </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="galaxy-tab-s catalog">
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/4" class="link">Galaxy Tab S4 </a></li> 
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/5e" class="link">Galaxy Tab S5e </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/6" class="link">Galaxy Tab S6 </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/6-lite" class="link">Galaxy Tab S6 Lite </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/7" class="link">Galaxy Tab S7 </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/7+" class="link">Galaxy Tab S7+ </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/7-fe" class="link">Galaxy Tab S7 FE </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/7-ultra" class="link">Galaxy Tab S7 Ultra </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/8" class="link">Galaxy Tab S8 </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/8+" class="link">Galaxy Tab S8+ </a></li>
+                                        <li class="galaxy-tab-s"><a href="devis/tablette/galaxy-tab-s/8-ultra" class="link">Galaxy Tab S8 Ultra </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="galaxy-tab catalog">
+                                        <li class="galaxy-tab"><a href="devis/tablette/galaxy-tab/4" class="link">Galaxy Tab 4 7.0 </a></li> 
+                                        <li class="galaxy-tab"><a href="devis/tablette/galaxy-tab/10" class="link">Galaxy Tab 10.1 </a></li>
+                                        <li class="galaxy-tab"><a href="devis/tablette/galaxy-tab/e" class="link">Galaxy Tab E </a></li>
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                    <ul class="autres-tab catalog">
+                                        <li class="autre-tab"><a href="devis/tablette/galaxy-tab/autres-tab" class="link">Autres Tab </a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordinateur-content">
+                            <ul class="marques">
+                                <li class="marque" data-marque="macbook-air">Macbook Air
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="macbook-pro">Macbook Pro
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="pc-windows">PC Portables
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                            </ul>
+                            <div class="global-wrapper">
+                                <div class="catalog-wrapper" data-catalog-active="macbook-air">
+                                    <ul class="macbook-air catalog" >
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/11-pouces-2011" class="link"> MacBook Air 11 Pouces 2011</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2012" class="link"> MacBook Air 13 Pouces 2012</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2013" class="link"> MacBook Air 13 Pouces 2013</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2014" class="link"> MacBook Air 13 Pouces 2014</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2015" class="link"> MacBook Air 13 Pouces 2015</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/12-pouces-2016" class="link"> MacBook Air 12 Pouces 2016</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2016" class="link"> MacBook Air 13 Pouces 2016</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2017" class="link"> MacBook Air 13 Pouces 2017</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2018" class="link"> MacBook Air 13 Pouces 2018</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2019" class="link"> MacBook Air 13 Pouces 2019</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2020" class="link"> MacBook Air 13 Pouces 2020</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2021" class="link"> MacBook Air 13 Pouces 2021</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-air/13-pouces-2022" class="link"> MacBook Air 13 Pouces 2022</a></li>
+                                       
+                                    </ul>
+                                    <ul class="macbook-pro catalog" >
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/11-pouces-2011" class="link"> MacBook Pro 13 Pouces année 2011</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2012" class="link"> MacBook Pro 13 Pouces année 2012</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2013" class="link"> MacBook Pro 13 Pouces année 2013</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2014" class="link"> MacBook Pro 13 Pouces année 2014</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2015" class="link"> MacBook Pro 13 Pouces année 2015</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2015" class="link"> MacBook Pro 15 Pouces année 2015</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2016" class="link"> MacBook Pro 13 Pouces année 2016</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2016" class="link"> MacBook Pro 15 Pouces année 2016</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2017" class="link"> MacBook Pro 13 Pouces année 2017</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2017" class="link"> MacBook Pro 15 Pouces année 2017</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2018" class="link"> MacBook Pro 13 Pouces année 2018</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2018" class="link"> MacBook Pro 15 Pouces année 2018</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/16-pouces-2018" class="link"> MacBook Pro 16 Pouces année 2018</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2019" class="link"> MacBook Pro 13 Pouces année 2019</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2019" class="link"> MacBook Pro 15 Pouces année 2019</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/16-pouces-2019" class="link"> MacBook Pro 16 Pouces année 2019</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2020" class="link"> MacBook Pro 13 Pouces année 2020</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2020" class="link"> MacBook Pro 15 Pouces année 2020</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/16-pouces-2020" class="link"> MacBook Pro 16 Pouces année 2020</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/13-pouces-2021" class="link"> MacBook Pro 13 Pouces année 2021</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/15-pouces-2021" class="link"> MacBook Pro 15 Pouces année 2021</a></li>
+                                        <li class="macbook"><a href="devis/ordinateur/macbook-pro/16-pouces-2021" class="link"> MacBook Pro 16 Pouces année 2021</a></li>
+                                    </ul>
+                                    <ul class="pc-windows catalog">
+                                        <li class="pc-windows"><a href="devis/ordinateur/pc-windows" class="link">PC Windows</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="autre-objet-content">
+                            <ul class="marques">
+                                <li class="marque" data-marque="console">Console
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="accessoires">Accessoires
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="montres">Montres
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="photos">Photos
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="trotinette">Trotinettes
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                                <li class="marque" data-marque="autres-objets">Autres
+                                     <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </li>
+                            </ul>
+                            <div class="global-wrapper">
+                                <div class="catalog-wrapper"  data-catalog-active="console">
+                                    <ul class="console catalog">
+                                       <div class="console-play-station">
+                                        <li class="console play-station"><a href="devis/objet-nomade/console/play-station/generation-2" class="link">Play Station 2 </a></li>
+                                        <li class="console play-station"><a href="devis/objet-nomade/console/play-station/generation-3" class="link">Play Station 3 </a></li>
+                                        <li class="console play-station"><a href="devis/objet-nomade/console/play-station/generation-4" class="link">Play Station 4 </a></li>
+                                        <li class="console play-station"><a href="devis/objet-nomade/console/play-station/generation-5" class="link">Play Station 5 </a></li>
+                                       </div>
+                                       <div class="console-xbox">
+                                        <li class="console x-box-series-s"><a href="devis/objet-nomade/console/x-box/series-s" class="link">XBOX Serie S </a></li>
+                                        <li class="console x-box-series-x"><a href="devis/objet-nomade/console/x-box/series-x" class="link">XBOX Serie X </a></li>
+                                       </div>
+                                    </ul>
+                                    <ul class="montres catalog">
+                                       <div class="montres-apple">
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-1" class="link apple-watch"> Apple Watch Serie 1</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-2" class="link apple-watch"> Apple Watch Serie 2</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-3" class="link apple-watch"> Apple Watch Serie 3</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-4" class="link apple-watch"> Apple Watch Serie 4</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-5" class="link apple-watch"> Apple Watch Serie 5</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-6" class="link apple-watch"> Apple Watch Serie 6</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-7" class="link apple-watch"> Apple Watch Serie 7</a></li>
+                                        <li class="montres apple-watch"><a href="devis/objet-nomade/montres/apple-watch/serie-8" class="link apple-watch"> Apple Watch Serie 8</a></li>
+                                    </div>
+                                    <div class="montres-samsung">
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-1-46mm" class="link apple-watch"> Galaxy Watch (46mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-1-42mm" class="link apple-watch"> Galaxy Watch (42mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-active" class="link apple-watch"> Galaxy Watch Active  </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-active-bluetooth-40mm" class="link apple-watch"> Galaxy Watch Active 2 Bluetooth (40mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-active-2-bluetooth-44mm" class="link apple-watch"> Galaxy Watch Active 2 Bluetooth (44mm)  </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-fit" class="link apple-watch"> Galaxy Watch Fit  </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-fit-2" class="link apple-watch"> Galaxy Watch Fit  2</a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-3-bluetooth-45mm" class="link apple-watch"> Galaxy Watch 3 Bluetooth (45mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-3-bluetooth-41mm" class="link apple-watch"> Galaxy Watch 3 Bluetooth (41mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-5-bluetooth-pro-45mm" class="link apple-watch"> Galaxy Watch 5 Bluetooth Pro (45mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-5-bluetooth-40mm" class="link apple-watch"> Galaxy Watch 5 Bluetooth  (40mm) </a></li>
+                                           <li class="montres galaxy-watch"><a href="devis/objet-nomade/montres/galaxy-watch/serie-5-44mm" class="link apple-watch"> Galaxy Watch 5 (44mm) </a></li>
+                                       </div>
+                                    </ul>
+                                    <ul class="autres-objets catalog">
+                                        <li class="autres-objets-nomades">
+                                        <a href="devis/objet-nomade/autres-objets" class="link"> Autre objet nomade </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="photos catalog">
+                                        <li class="photos"><a href="devis/objet-nomade/photos/une-photo" class="link"> Une photo</a></li>
+                                    </ul>
+                                    <ul class="accessoires catalog">
+                                        <li class="accessoires"><a href="devis/objet-nomade/accessoires/un-accessoire" class="link"> Un accessoire </a></li>
+                                    </ul>
+                                    <ul class="trotinette catalog">
+                                        <li class="trotinette"><a href="devis/objet-nomade/trotinette/une-trotinette" class="link"> Une trotinette  </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </main>
+        <script src="./toogle.js"></script>
+        <script src="./handleClick.js"></script>
+    </body>
+</html>

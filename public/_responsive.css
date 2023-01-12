@@ -1,0 +1,107 @@
+@media screen and (max-width: 768px) {
+  html {
+    height: auto;
+  }
+
+  body {
+    overflow-x: hidden;
+    height: auto !important;
+  }
+
+  main {
+    width: 98%;
+    margin-top: 0rem;
+  }
+
+  .logo-container {
+    width: calc(100% + 4rem);
+  }
+
+  a.logo-clickable {
+    top: 1rem;
+    left: 3rem;
+  }
+
+  .flex-h {
+    flex-direction: column;
+  }
+
+  section.as-heroe aside {
+    flex: 1;
+    width: 100%;
+  }
+
+  ul.categories {
+    flex-wrap: wrap;
+  }
+
+  .category-contents[data-category="smartphone"] div[class^="smart"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .category-contents[data-category="smartphone"] div[class^="smart"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .category-contents[data-category="tablette"] div[class^="tablette"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .category-contents[data-category="ordinateur"] div[class^="ordinateur"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .category-contents[data-category="autre-objet"] div[class^="autre-objet"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  ul.marques>li.marque.listed::after {
+    display: none !important;
+  }
+
+  ul.marques {
+    padding: 0;
+    width: 100%;
+  }
+
+  ul.categories > li {
+    padding: .2rem;
+    flex: 48%;
+  }
+
+  ul.catalog {
+    padding: 0;
+  }
+
+  ul.catalog>* {
+    align-self: flex-start;
+  }
+
+  .box-content h2.heading {
+    /* color: white !important; */
+    font-size: 22pt !important;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    flex-direction: row !important;
+    margin-top: 1rem;
+  }
+
+
+  main section.as-heroe {
+    flex-direction: column;
+  }
+
+
+  section.as-heroe.visible {
+    height: 650px !important;
+    padding: 10% !important;
+  }
+
+}

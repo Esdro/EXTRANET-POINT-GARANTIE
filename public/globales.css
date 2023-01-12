@@ -1,0 +1,240 @@
+/****************************************
+
+    PARTIE PROPRETES CSS  GLOBALES
+/**************************************** */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+}
+
+@font-face {
+  font-family: Code Pro;
+  src: url("https://cdn.shopify.com/s/files/1/0459/5879/1320/files/code_pro.otf?v=1668195212");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden !important;
+  
+}
+.gray-text {
+    color: gray;
+}
+
+main{
+    margin-top: 3.5rem;
+    width: 86%;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+/****************************************
+
+    PARTIE VARIABLES CSS 
+/**************************************** */
+
+:root {
+  --accent-color: #ffc107;
+  --like-green: #78c175;
+  --like-blue: #004aad;
+  --radius: 5px;
+  ---box-shadow: 5px 5px 15px 15px transparent;
+  
+}
+
+.bold{
+font-weight: bold;
+}
+
+.stroked {
+    stroke: thin black;
+    -webkit-text-stroke:  thin black;
+    color: white;
+}
+
+.flex-h{
+    display: flex;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+.gap-5{
+    gap: 5px;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items: center;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 4;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: normal;
+    font-family: Code Pro;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 1.5rem;
+}
+
+a{
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+a,button, i{
+  cursor: pointer;
+}
+button{
+    outline: none;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/****************************************
+
+    PARTIE LOGO 
+/**************************************** */
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  border-radius: 0 0 0 150px;
+  height: 400px;
+  align-items: center;
+  background-color: var(--accent-color);
+  transform: rotate(-10deg);
+  margin-top: -20rem;
+  margin-left: -4rem;
+  position: relative;
+  z-index: -1;
+}
+
+a.logo-clickable {
+  width: 150px;
+  position: absolute;
+  top: 4rem;
+  left: 2.5rem;
+  display: block;
+  z-index: 4;
+}
+a.logo-clickable img {
+  width: 100%;
+}
+
+
+
+/****************************************
+
+    PARTIE heroe 
+/**************************************** */
+
+
+main section.as-heroe  {
+  gap: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -100%;
+  transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+  transition-timing-function: ease-in-out;
+  position: relative;
+}
+
+main section.as-heroe.visible {
+
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    transition:  visibility 0s,   opacity 0.5s ,  margin-top 2.5s;
+    transition-timing-function: ease-in-out;
+}
+main section.as-heroe aside {
+    height: 300px;
+    width: 100%;
+    background-image: url("/images/arlington-research-nFLmPAf9dVc-unsplash.jpg");
+   position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main aside .fake-opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+aside.left-box .fake-opacity {
+    opacity: .68;
+    background-color: white;
+}
+aside.right-box .fake-opacity {
+    opacity: .48;
+    background-color: black;
+}
+
+main aside .box-content{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin-inline: auto;
+    height: 100%;
+    padding: 0% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+main aside .box-content h2 {
+    font-size: 1.6rem;
+}
+main aside.right-box .box-content h2{
+    color: white;
+}
+main aside .box-content button   {
+    align-self: flex-start;
+    padding: .7rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(---box-shadow);
+      
+}
+
+main aside.right-box .box-content button {
+    background-color: var(--like-green);
+    color: black;
+}
+main aside.left-box .box-content button {
+    color: white;
+    background-color: var(--like-blue);
+}
+
+

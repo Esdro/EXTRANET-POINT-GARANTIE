@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="/publics/globales.css">
+        <link rel="stylesheet" href="./page-3.css">
+        <link rel="stylesheet" href="/publics/responsive.css">
+        <title>Réparation de :</title>
+    </head>
+    <body>
+        <a href="https://garantie.market" class="logo-clickable">
+            <img src="https://cdn.shopify.com/s/files/1/0459/5879/1320/files/logo_96cf7697-d2f0-40a0-92e9-6005be304fea.png?v=1668195212" alt="Logo de notre site ">
+        </a>
+        <div class="logo-container"></div>
+        <main class="main-content">
+            <section class="first-content as-header">
+                <div class="breadcrumb flex-h gap-5 justify-content-around">
+                    <span class="back-icon">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                    <span class="type-d-appareil">Smartphone</span>
+                    <span class="horizontal-divider">
+                        <i class="fa-solid fa-circle-right"></i>
+                    </span>
+                    <span class="marque-d-appareil">Samsung</span>
+                    <span class="horizontal-divider">
+                        <i class="fa-solid fa-circle-right"></i>
+                    </span>
+                    <span class="appareil-en-question">Galaxy S22 Ultra</span>
+                </div>
+            </section>
+            <section class="panne-selection">
+                <header class="panne-header">
+                    <h1 class="header-title"> Quelle est la
+                        <span class="stroked">panne</span> ?
+                    </h1>
+                </header>
+                <div class="form-wrapper">
+                    <form action="#" class="type-de-panne" id="form-panne">
+                        <div class="content-grid-for-panne">
+                            <div class="col-1">
+                                <div class="maj">
+                                    <label for="maj" class="maj"> Mise à jour logiciel</label>
+                                    <input
+                                        type="radio"
+                                        name="quelle-panne"
+                                        id="maj"
+                                        hidden
+                                        value="mise-a-jour"
+                                        checked
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="desoxydation">
+                                    <label for="desoxydation" class="desoxydation"> Désoxydation</label>
+                                    <input
+                                        type="radio"
+                                        name="quelle-panne"
+                                        id="desoxydation"
+                                        hidden
+                                        value="desoxydation"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="diagnostic">
+                                    <label for="diagnostic" class="diagnostic"> Diagnostic</label>
+                                    <input
+                                        type="radio"
+                                        name="quelle-panne"
+                                        id="diagnostic"
+                                        hidden
+                                        value="diagnostic"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="reparation-ecran">
+                                    <label for="reparation-ecran" class="reparation-ecran">Réparation écran</label>
+                                    <input
+                                        type="radio"
+                                        name="quelle-panne"
+                                        id="reparation-ecran"
+                                        hidden
+                                        value="reparation-ecran"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="img-wrapper-for-illustration">
+                                    <img src="../images/gg.png" alt=" Image illustration de votre panne ">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="r-c-charge">
+                                    <label for="r-c-charge" class="r-c-charge">Remplacement connecteur de charge</label>
+                                    <input
+                                    type="radio"
+                                    name="quelle-panne"
+                                    id="r-c-charge"
+                                    hidden
+                                    value="remplacement-connecteur-de-charge"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="r-batterie">
+                                    <label for="r-batterie" class="r-batterie"> Remplacement batterie</label>
+                                    <input
+                                    type="radio"
+                                    name="quelle-panne"
+                                    id="r-batterie"
+                                    hidden
+                                    value="remplacement-batterie"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="r-bouton">
+                                    <label for="r-bouton" class="r-bouton"> Remplacement bouton</label>
+                                    <input
+                                    type="radio"
+                                    name="quelle-panne"
+                                    id="r-bouton"
+                                    hidden
+                                    value="remplacement-bouton"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                                <div class="autre-pb-non-r">
+                                    <label for="autre-pb-non-r" class="autre-pb-non-r">Autre problème non répertorié</label>
+                                    <input
+                                    type="radio"
+                                    name="quelle-panne"
+                                    id="autre-pb-non-r"
+                                    hidden
+                                    value="aucun-pb-ici"
+                                    >
+                                    <span class="fake-radio"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="options-de-reparation-container flex-h">
+                            <div class="option-1 envoie-en-atelier">
+                                <div class="titre-de-l-option">
+                                    <h6>Option 1 : Envoie en atelier </h6>
+                                </div>
+                                <div class="box-description-de-l-option">
+                                    <label for="option-1">
+                                        <span class="subtitle">Tarifs inclus : </span>
+                                        <ul class="list-tarifs">
+                                            <li class="item"> <i class="fa fa-check"></i> Réparation écran</li>
+                                            <li class="item"> <i class="fa fa-check"></i> Envoie Express 24 heures</li>
+                                            <li class="item"> <i class="fa fa-check"></i> Prise en charge immédiate dès réception </li>
+                                            <li class="item"> <i class="fa fa-check"></i> Numéro de suivi</li>
+                                        </ul>
+                                    </label>
+                                    <input type="radio" name="quelle-option" id="option-1" hidden value="envoie-en-atelier">
+                                    <span class="fake-radio"></span>
+                                </div>
+                            </div>
+                            <div class="option-2 rende-vous-chez-le-r">
+                                <div class="titre-de-l-option">
+                                    <h6>Option 2 : Rendez-vous chez un réparateur  agréé proche de chez vous   </h6>
+                                </div>
+                                <div class="box-description-de-l-option">
+                                    <label for="option-2">
+                                        <ul class="list-tarifs">
+                                            <li class="item"> <i class="fa fa-check"></i> Pièces d'origine et/ou compatibles</li>
+                                            <li class="item"> <i class="fa fa-check"></i> Réparation garantie dans tout le réseau <span class="bold">Point Garantie</span></li>
+                                            <li class="item"> <i class="fa fa-check"></i> Prise en charge immédiate dès réception </li>
+                                            <li class="item"> <i class="fa fa-check"></i> Numéro de suivi</li>
+                                        </ul>
+                                    </label>
+                                    <input type="radio" name="quelle-option" id="option-2" hidden value="rendez-vous-chez-le-reparateur">
+                                    <span class="fake-radio"></span>
+                                </div>
+                            </div>
+                            <div class="validation-bouton">
+                                <button class="btn" type="submit"> Valider  </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="./toogle.js"></script>
+    </body>
+</html>
+
+
